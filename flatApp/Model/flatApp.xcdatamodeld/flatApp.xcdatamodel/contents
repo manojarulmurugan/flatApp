@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H114" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Admin" representedClassName="Admin" syncable="YES" codeGenerationType="class">
+        <attribute name="designation" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phoneNo" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="AudioURL" representedClassName="AudioURL" syncable="YES" codeGenerationType="class">
+        <attribute name="url" optional="YES" attributeType="URI"/>
+    </entity>
+    <entity name="Complaint" representedClassName="Complaint" syncable="YES" codeGenerationType="class">
+        <attribute name="audioFlag" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="complaintid" optional="YES" attributeType="String"/>
+        <attribute name="documentid" optional="YES" attributeType="String"/>
+        <attribute name="endComments" optional="YES" attributeType="String"/>
+        <attribute name="flatNo" optional="YES" attributeType="String"/>
+        <attribute name="longDesc" optional="YES" attributeType="String"/>
+        <attribute name="photoFlag" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="reportedBy" optional="YES" attributeType="String"/>
+        <attribute name="reportedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="shortDesc" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="PhotoURL" representedClassName="PhotoURL" syncable="YES" codeGenerationType="class">
+        <attribute name="url" optional="YES" attributeType="URI"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="contactNo" optional="YES" attributeType="String"/>
+        <attribute name="flatNo" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="ownershipType" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Admin" positionX="72" positionY="54" width="128" height="88"/>
+        <element name="AudioURL" positionX="72" positionY="72" width="128" height="58"/>
+        <element name="Complaint" positionX="-63" positionY="-18" width="128" height="223"/>
+        <element name="PhotoURL" positionX="81" positionY="81" width="128" height="58"/>
+        <element name="User" positionX="205.953125" positionY="30.4921875" width="128" height="103"/>
+    </elements>
+</model>

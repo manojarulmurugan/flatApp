@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1GN-pa-sPV">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="kDt-MN-5aC">
+            <objects>
+                <navigationController id="1GN-pa-sPV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EFd-BP-NkO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="o29-Sv-p2U" kind="relationship" relationship="rootViewController" id="eN2-zf-tLh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxa-mp-e5N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1744" y="81"/>
+        </scene>
+        <!--Add Admin-->
+        <scene sceneID="aVq-38-DKk">
+            <objects>
+                <navigationController id="W1h-jr-lv7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Add Admin" image="person.fill.badge.plus" catalog="system" id="lKm-p9-AiW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9fe-uv-LcM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WnK-gf-5FT" kind="relationship" relationship="rootViewController" id="pNG-NO-VpL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CpL-r6-f4m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="-242"/>
+        </scene>
+        <!--Super Admin View Controller-->
+        <scene sceneID="eXW-fn-EtP">
+            <objects>
+                <viewController id="WnK-gf-5FT" customClass="SuperAdminViewController" customModule="flatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GF4-pL-lfW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rl2-Sy-DAJ">
+                                <rect key="frame" x="20" y="175" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eov-wK-DUv">
+                                <rect key="frame" x="20" y="263" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Designation" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTt-O5-4M1">
+                                <rect key="frame" x="20" y="358" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uid-Xv-bgk">
+                                <rect key="frame" x="132" y="453" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36866697279999999" green="0.60420858180000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Add Admin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitAdminButtonPressed:" destination="WnK-gf-5FT" eventType="touchUpInside" id="Y7M-qB-MKu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NgX-da-aQ9"/>
+                        <color key="backgroundColor" red="1" green="0.48075776149999999" blue="0.49629490929999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Eho-fs-RHu"/>
+                    <connections>
+                        <outlet property="adminNameTextField" destination="Eov-wK-DUv" id="w50-Ii-CSK"/>
+                        <outlet property="designationTextField" destination="jTt-O5-4M1" id="apO-DX-VSB"/>
+                        <outlet property="phoneNoTextField" destination="Rl2-Sy-DAJ" id="Eiz-Hy-MWb"/>
+                        <outlet property="submitAdminButton" destination="uid-Xv-bgk" id="L6G-tc-JVp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgg-2X-Q6B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850.72463768115949" y="-235.04464285714283"/>
+        </scene>
+        <!--Remove Admin-->
+        <scene sceneID="Dyf-rh-4jm">
+            <objects>
+                <navigationController id="q2N-vh-XAH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Remove Admin" image="person.fill.badge.minus" catalog="system" id="iN4-tK-sMO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sOG-a8-FOu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZPl-uK-2d9" kind="relationship" relationship="rootViewController" id="yre-mB-2iD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gND-da-3ke" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64" y="423"/>
+        </scene>
+        <!--Delete View Controller-->
+        <scene sceneID="CDY-Lu-af6">
+            <objects>
+                <viewController id="ZPl-uK-2d9" customClass="DeleteViewController" customModule="flatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tQo-1i-Wxl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8zq-MP-JOY">
+                                <rect key="frame" x="28" y="371" width="358" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZ2-61-k1N">
+                                <rect key="frame" x="132" y="433" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36866697279999999" green="0.60420858180000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Delete Admin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteButtonPressed:" destination="ZPl-uK-2d9" eventType="touchUpInside" id="BvM-fr-stI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6oP-eg-3NR"/>
+                        <color key="backgroundColor" red="1" green="0.48075776149999999" blue="0.49629490929999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dEN-hi-ZeH"/>
+                    <connections>
+                        <outlet property="deleteButton" destination="EZ2-61-k1N" id="eU2-Bk-Onl"/>
+                        <outlet property="phoneNumberTextField" destination="8zq-MP-JOY" id="ZWu-Tn-oPK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="611-U6-QLv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851" y="423"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="VGo-g8-kNS">
+            <objects>
+                <tabBarController storyboardIdentifier="SuperAdminVC" id="o29-Sv-p2U" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LH9-ba-ZIl"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Ed-rJ-bnA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="W1h-jr-lv7" kind="relationship" relationship="viewControllers" id="fUE-Dr-IIg"/>
+                        <segue destination="q2N-vh-XAH" kind="relationship" relationship="viewControllers" id="yxx-eR-O8m"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TQO-mf-Hb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-971" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.fill.badge.minus" catalog="system" width="128" height="124"/>
+        <image name="person.fill.badge.plus" catalog="system" width="128" height="124"/>
+    </resources>
+</document>
